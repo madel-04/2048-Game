@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048 Game</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>2048 Game</h1>
+        <p class="description">
+            The game starts with two tiles, each randomly placed on the grid. The initial values of these tiles are either 2 or 4. Players can move the tiles using keyboard arrow keys:
+        </p>        
+        <div class="score-container">
+            <span>Score: <span id="score">0</span></span>
+            <span>Best: <span id="best-score">0</span></span>
+        </div>
+            <button id="restart-button">Restart</button>
+        <div class="grid-container" id="grid-container"></div>
+        <div class="controls">
+            <button id="undo-button">↩</button>
+            <button id="redo-button">↪</button>
+            <button id="new-game-button">New Game</button>
+        </div>
+    </div>
+    <script src="js/board.js"></script>
+    <script src="js/tile.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html>
