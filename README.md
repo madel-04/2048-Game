@@ -1,60 +1,167 @@
-# 2048 Game
+# 🎮✨ **¡Bienvenido a 2048 — Pink Edition!** ✨🎮
 
-## Overview
-2048 is a sliding block puzzle game that combines numbers to create a tile with the value of 2048. The game is played on a 4x4 grid, and the objective is to slide numbered tiles on the grid to combine them and create a tile with the number 2048.
+Una recreación moderna, responsiva y visualmente pulida del clásico puzzle de deslizamiento que ha cautivado a millones de jugadores.
 
-## Project Structure
+Este proyecto combina **JavaScript modular**, **HTML**, **CSS**, y un entorno completamente empaquetado con **Docker**, para garantizar que puedas ejecutarlo en cualquier máquina con un solo comando.
+
+---
+
+## 🧩 ¿Qué es 2048?
+
+**2048** es un juego de rompecabezas en un tablero de **4×4**, donde el jugador desliza fichas numeradas para combinarlas y crear números mayores.
+El objetivo es llegar a la famosa ficha **2048**.
+
+Cada movimiento es importante:
+
+* combina fichas 💥
+* planea tu estrategia 🧠
+* evita quedarte sin movimientos ❌
+
+---
+
+## 🌟 Características Principales
+
+✔️ Interfaz moderna inspirada en apps móviles
+✔️ Paleta de colores pastel (con tonos de rosa)
+✔️ Animaciones suaves para movimiento y combinaciones
+✔️ Diseño completamente responsivo (PC/Móvil)
+✔️ Arquitectura modular en JavaScript
+✔️ Docker-ready: listo para correr en un solo comando
+✔️ Código claro y fácil de extender
+
+---
+
+## 📂 Estructura del Proyecto
+
 ```
 2048-game
 ├── src
 │   ├── css
-│   │   └── style.css      # Styles for the game
+│   │   └── style.css          # Estilos visuales
 │   ├── js
-│   │   ├── board.js       # Game board management
-│   │   ├── game.js        # Main game logic
-│   │   ├── tile.js        # Tile class definition
-│   │   └── ui.js          # User interface updates
-│   └── index.html         # HTML structure for the game
-├── Dockerfile              # Instructions to build the Docker image
-├── docker-compose.yml      # Defines services for the Docker application
-├── package.json            # Project configuration and dependencies
-├── package-lock.json       # Locks the versions of dependencies
-└── README.md               # Project documentation
+│   │   ├── board.js           # Lógica del tablero
+│   │   ├── game.js            # Controlador principal
+│   │   ├── tile.js            # Clase Tile
+│   │   └── ui.js              # Actualización de la interfaz
+│   └── index.html             # Estructura HTML del juego
+├── Dockerfile                  # Imagen Docker
+├── docker-compose.yml          # Configuración Docker
+├── package.json                # Dependencias y scripts
+├── package-lock.json           # Versionado de dependencias
 ```
 
-## Installation
-1. Clone the repository:
-   ```
-   git clone <repository-url>
-   ```
-2. Navigate to the project directory:
-   ```
-   cd 2048-game
-   ```
-3. Build the Docker image:
-   ```
-   docker compose build
-   docker compose up
-   ```
-4. Open your browser and navigate to `http://localhost:8081` to play the game.
-5. To stop the container, press Ctrl + C and
-   ```
-   docker compose down
-   ```
+---
 
-## Usage
-1. Open the game in a web browser to start the game.
-2. Use the arrow keys (or swipe gestures on mobile) to move the tiles.
-3. Combine tiles with the same number to create a new tile with their sum.
-4. The game ends when there are no more valid moves available.
+## 🚀 Instalación y Ejecución con Docker
 
-## Game Mechanics
-- The game starts with two tiles on the board, each with a value of 2 or 4.
-- Tiles slide in the direction of the arrow key pressed.
-- When two tiles with the same number collide, they merge into one tile with their sum.
-- The score increases by the value of the merged tiles.
-- The game is won when a tile with the value of 2048 is created.
-- The game is lost when there are no more valid moves available.
+Este proyecto está pensado para ejecutarse sin configuraciones complicadas.
 
-## Contributing
-Feel free to submit issues or pull requests to improve the game or fix bugs.
+### 📦 1. Clona el repositorio
+
+```bash
+git clone <repository-url>
+```
+
+### 📁 2. Ingresa a la carpeta del proyecto
+
+```bash
+cd 2048-game
+```
+
+### 🏗️ 3. Construye y ejecuta el contenedor
+
+```bash
+docker compose build
+docker compose up
+```
+
+### ▶️ 4. Abre el juego en tu navegador
+
+👉 `http://localhost:8081`
+
+### 🛑 5. Para detener la aplicación
+
+```bash
+Ctrl + C
+docker compose down
+```
+
+---
+
+## 🕹️ Cómo Jugar
+
+1. Abre el juego en tu navegador.
+2. Usa las **flechas del teclado** para mover las fichas (o gestos táctiles en móvil).
+3. Dos fichas iguales se combinan formando una ficha mayor.
+4. Acumula puntaje y trata de alcanzar la ficha **2048**.
+5. El juego termina si ya no quedan movimientos posibles.
+
+---
+
+## 🔍 Mecánicas del Juego
+
+* ⭐ Comienzas con **dos fichas** de valor **2 o 4**.
+* 🔄 Cada movimiento desliza todas las fichas en la dirección elegida.
+* 💥 Fichas iguales se fusionan sumando sus valores.
+* 📈 El puntaje aumenta según el valor creado al fusionar.
+* 🏆 Ganas al conseguir la ficha **2048**.
+* ☠️ Pierdes si no quedan movimientos posibles.
+
+---
+
+## 📱 Diseño Responsivo
+
+El juego está optimizado para:
+
+* 🖥️ Pantallas grandes (PC, laptops)
+* 📱 Teléfonos móviles
+* 📲 Tablets
+
+La cuadrícula siempre mantiene proporciones estéticas, con fichas suaves, colores agradables y tipografías claras.
+
+---
+
+## 🎨 Paleta de Colores (Tonos Rosados)
+
+Las fichas del juego utilizan colores suaves basados en tonos rosa:
+
+* `2`  → rosa claro pastel
+* `4`  → rosa durazno
+* `8`  → rosa salmón
+* `16` → rosa más intenso
+* `32+` → gradientes rosados más saturados
+
+Esto crea una experiencia visual hermosa, limpia y accesible.
+
+---
+
+## 🤝 Contribuciones
+
+¡Las contribuciones siempre son bienvenidas!
+Puedes ayudar con:
+
+* Nuevas características
+* Corrección de bugs
+* Mejoras en accesibilidad
+* Mejoras visuales
+* Optimización del rendimiento
+
+Para contribuir:
+
+1. Haz un fork del repositorio
+2. Crea una rama específica para tu feature
+3. Envía un Pull Request ✨
+
+---
+
+## 📝 Licencia
+
+Este proyecto es completamente libre para usar, estudiar y mejorar.
+Incluye los archivos necesarios para ejecutarse en cualquier entorno.
+
+---
+
+## 💬 Contacto
+
+Si tienes dudas, mejoras o sugerencias, ¡no dudes en abrir un issue o enviarme un mensaje!
+
