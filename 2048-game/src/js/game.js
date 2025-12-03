@@ -111,7 +111,7 @@ class Game {
 
     checkGameOver() {
         if (this.isGameOver) return;
-        if (this.hasWon) return;
+        //if (this.hasWon) return;
         if (!this.board.canMove() && this.board.isFull()) {
             this.isGameOver = true;
             

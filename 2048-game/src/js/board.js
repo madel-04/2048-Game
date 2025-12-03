@@ -24,6 +24,7 @@ class Board {
         if (emptyTiles.length === 0) return false;
         const { r, c } = emptyTiles[Math.floor(Math.random() * emptyTiles.length)];
         this.grid[r][c] = Math.random() < 0.9 ? 2 : 4;
+        //this.grid[r][c] = 1024; // For testing purposes, always add 1024 tiles
         return true;
     }
 
