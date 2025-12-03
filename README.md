@@ -13,21 +13,26 @@ El objetivo es llegar a la famosa ficha **2048**.
 
 Cada movimiento es importante:
 
-* combina fichas 💥
-* planea tu estrategia 🧠
-* evita quedarte sin movimientos ❌
+* combina fichas 
+* planea tu estrategia 
+* evita quedarte sin movimientos 
 
 ---
 
 ## 🌟 Características Principales
 
 ✔️ Interfaz moderna inspirada en apps móviles
+
 ✔️ Paleta de colores pastel (con tonos de rosa)
+
 ✔️ Animaciones suaves para movimiento y combinaciones
-✔️ Diseño completamente responsivo (PC/Móvil)
+
 ✔️ Arquitectura modular en JavaScript
-✔️ Docker-ready: listo para correr en un solo comando
+
+✔️ Docker-ready: listo para correr en un par de comandos
+
 ✔️ Código claro y fácil de extender
+
 
 ---
 
@@ -47,7 +52,6 @@ Cada movimiento es importante:
 ├── Dockerfile                  # Imagen Docker
 ├── docker-compose.yml          # Configuración Docker
 ├── package.json                # Dependencias y scripts
-├── package-lock.json           # Versionado de dependencias
 ```
 
 ---
@@ -100,24 +104,12 @@ docker compose down
 
 ## 🔍 Mecánicas del Juego
 
-* ⭐ Comienzas con **dos fichas** de valor **2 o 4**.
-* 🔄 Cada movimiento desliza todas las fichas en la dirección elegida.
-* 💥 Fichas iguales se fusionan sumando sus valores.
-* 📈 El puntaje aumenta según el valor creado al fusionar.
-* 🏆 Ganas al conseguir la ficha **2048**.
-* ☠️ Pierdes si no quedan movimientos posibles.
-
----
-
-## 📱 Diseño Responsivo
-
-El juego está optimizado para:
-
-* 🖥️ Pantallas grandes (PC, laptops)
-* 📱 Teléfonos móviles
-* 📲 Tablets
-
-La cuadrícula siempre mantiene proporciones estéticas, con fichas suaves, colores agradables y tipografías claras.
+*  Comienzas con **dos fichas** de valor **2 o 4**.
+*  Cada movimiento desliza todas las fichas en la dirección elegida.
+*  Fichas iguales se fusionan sumando sus valores.
+*  El puntaje aumenta según el valor creado al fusionar.
+*  Ganas al conseguir la ficha **2048**.
+*  Pierdes si no quedan movimientos posibles.
 
 ---
 
@@ -126,12 +118,12 @@ La cuadrícula siempre mantiene proporciones estéticas, con fichas suaves, colo
 Las fichas del juego utilizan colores suaves basados en tonos rosa:
 
 * `2`  → rosa claro pastel
-* `4`  → rosa durazno
+* `4`  → rosa melocotón
 * `8`  → rosa salmón
 * `16` → rosa más intenso
 * `32+` → gradientes rosados más saturados
 
-Esto crea una experiencia visual hermosa, limpia y accesible.
+Esto crea una experiencia visual bonita, limpia y accesible.
 
 ---
 
