@@ -1,6 +1,6 @@
 # 🎮✨ **¡Bienvenido a 2048 — Pink Edition!** ✨🎮
 
-Una recreación moderna, responsiva y visualmente pulida del clásico puzzle de deslizamiento que ha cautivado a millones de jugadores.
+Una recreación moderna, y visualmente pulida del clásico puzzle 2048 como parte de Globant Piscine.
 
 Este proyecto combina **JavaScript modular**, **HTML**, **CSS**, y un entorno completamente empaquetado con **Docker**, para garantizar que puedas ejecutarlo en cualquier máquina con un solo comando.
 
@@ -20,8 +20,6 @@ Cada movimiento es importante:
 ---
 
 ## 🌟 Características Principales
-
-✔️ Interfaz moderna inspirada en apps móviles
 
 ✔️ Paleta de colores pastel (con tonos de rosa)
 
@@ -49,9 +47,9 @@ Cada movimiento es importante:
 │   │   ├── tile.js            # Clase Tile
 │   │   └── ui.js              # Actualización de la interfaz
 │   └── index.html             # Estructura HTML del juego
-├── Dockerfile                  # Imagen Docker
-├── docker-compose.yml          # Configuración Docker
-├── package.json                # Dependencias y scripts
+├── Dockerfile                 # Imagen Docker
+├── docker-compose.yml         # Configuración Docker
+├── package.json               # Dependencias y scripts
 ```
 
 ---
@@ -95,10 +93,10 @@ docker compose down
 ## 🕹️ Cómo Jugar
 
 1. Abre el juego en tu navegador.
-2. Usa las **flechas del teclado** para mover las fichas (o gestos táctiles en móvil).
+2. Usa las **flechas del teclado** para mover las fichas.
 3. Dos fichas iguales se combinan formando una ficha mayor.
 4. Acumula puntaje y trata de alcanzar la ficha **2048**.
-5. El juego termina si ya no quedan movimientos posibles.
+5. El juego termina si ya no quedan movimientos posibles o llegas a la puntuación máxima. 
 
 ---
 
@@ -110,20 +108,6 @@ docker compose down
 *  El puntaje aumenta según el valor creado al fusionar.
 *  Ganas al conseguir la ficha **2048**.
 *  Pierdes si no quedan movimientos posibles.
-
----
-
-## 🎨 Paleta de Colores (Tonos Rosados)
-
-Las fichas del juego utilizan colores suaves basados en tonos rosa:
-
-* `2`  → rosa claro pastel
-* `4`  → rosa melocotón
-* `8`  → rosa salmón
-* `16` → rosa más intenso
-* `32+` → gradientes rosados más saturados
-
-Esto crea una experiencia visual bonita, limpia y accesible.
 
 ---
 
