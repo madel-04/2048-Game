@@ -19,7 +19,7 @@ class UI {
 
         // New Game button
         this.newGameButton.addEventListener('click', () => {
-            if (window.game && typeof window.game.restartGame === 'function') {
+            if (window.game && typeof window.game.newGame === 'function') {
                 window.game.newGame();
             } else {
                 location.reload();
